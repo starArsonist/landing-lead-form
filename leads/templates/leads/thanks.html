@@ -1,0 +1,17 @@
+{% load static %}<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex">
+  <title>Заявка принята — Контур</title>
+  <link rel="stylesheet" href="{% static 'leads/landing.css' %}">
+</head>
+<body>
+  <main class="wrap thanks">
+    <h1>Спасибо, заявка принята</h1>
+    <p class="lead">Мы перезвоним в рабочее время в течение 15 минут и уточним детали.</p>
+    <a class="btn" href="{% url 'landing' %}">Вернуться на главную</a>
+  </main>
+</body>
+</html>

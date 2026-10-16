@@ -1,0 +1,164 @@
+{% load static %}<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Контур — ремонт квартир под ключ с фиксированной сметой</title>
+  <meta name="description" content="Ремонт квартир под ключ: смета до начала работ, договор с фиксированной ценой, поэтапная оплата и гарантия 3 года. Демо-страница.">
+  <link rel="stylesheet" href="{% static 'leads/landing.css' %}">
+</head>
+<body>
+
+<header class="top">
+  <a class="logo" href="#top">Контур</a>
+  <nav aria-label="Разделы">
+    <a href="#how">Как работаем</a>
+    <a href="#prices">Цены</a>
+    <a href="#faq">Вопросы</a>
+    <a class="btn small" href="#lead-form">Рассчитать смету</a>
+  </nav>
+</header>
+
+<main id="top">
+  <section class="hero">
+    <div class="wrap hero-grid">
+      <div>
+        <p class="eyebrow">Ремонт квартир под ключ</p>
+        <h1>Ремонт по смете, которая не растёт по ходу работ</h1>
+        <p class="lead">Считаем стоимость до начала, фиксируем её в договоре и платим поэтапно: следующий платёж — только после того, как вы приняли предыдущий этап.</p>
+        <ul class="ticks">
+          <li>Смета за 1 рабочий день после замеров</li>
+          <li>Гарантия 3 года, прописана в договоре</li>
+          <li>Фотоотчёт по каждому этапу</li>
+        </ul>
+        <a class="btn" href="#lead-form">Получить расчёт бесплатно</a>
+      </div>
+      <aside class="hero-card" aria-label="Коротко о компании">
+        <dl>
+          <div><dt>12 лет</dt><dd>на рынке</dd></div>
+          <div><dt>640+</dt><dd>сданных объектов</dd></div>
+          <div><dt>96%</dt><dd>сдаём в срок</dd></div>
+          <div><dt>3 года</dt><dd>гарантии</dd></div>
+        </dl>
+      </aside>
+    </div>
+  </section>
+
+  <section class="wrap section" id="why">
+    <h2>Почему выбирают нас</h2>
+    <div class="cards">
+      <article class="card"><h3>Цена не меняется</h3><p>Любое изменение объёма согласуется письменно. Без «вскрылось в процессе».</p></article>
+      <article class="card"><h3>Оплата по этапам</h3><p>Платите за принятую работу. Аванс — только на материалы текущего этапа.</p></article>
+      <article class="card"><h3>Один ответственный</h3><p>Прораб на связи в мессенджере. Все вопросы решаются в одном чате.</p></article>
+      <article class="card"><h3>Материалы по чекам</h3><p>Закупаем по вашему выбору и показываем чеки. Наценку на материалы не берём.</p></article>
+    </div>
+  </section>
+
+  <section class="band" id="how">
+    <div class="wrap">
+      <h2>Как мы работаем</h2>
+      <ol class="steps">
+        <li><b>Заявка и замеры</b><span>Созваниваемся, выезжаем на объект, снимаем размеры.</span></li>
+        <li><b>Смета и договор</b><span>Через день присылаем смету по позициям. Цена и сроки фиксируются.</span></li>
+        <li><b>Ремонт по этапам</b><span>Черновые работы, инженерия, отделка. После каждого этапа — акт и фотоотчёт.</span></li>
+        <li><b>Сдача и гарантия</b><span>Вместе проверяем результат, подписываем акт и выдаём гарантийный талон.</span></li>
+      </ol>
+    </div>
+  </section>
+
+  <section class="wrap section" id="prices">
+    <h2>Ориентировочные цены</h2>
+    <p class="muted">Итоговая стоимость зависит от планировки и материалов. Точную смету даём после замеров.</p>
+    <div class="cards three">
+      <article class="card plan">
+        <h3>Косметический</h3>
+        <p class="price">от 6 500 ₽/м²</p>
+        <ul><li>Стены, потолки, полы</li><li>Замена дверей и плинтусов</li><li>Срок от 3 недель</li></ul>
+        <a class="btn ghost" href="#lead-form">Узнать стоимость</a>
+      </article>
+      <article class="card plan featured">
+        <p class="badge">Выбирают чаще всего</p>
+        <h3>Капитальный</h3>
+        <p class="price">от 11 900 ₽/м²</p>
+        <ul><li>Замена электрики и сантехники</li><li>Выравнивание стен и пола</li><li>Срок от 8 недель</li></ul>
+        <a class="btn" href="#lead-form">Узнать стоимость</a>
+      </article>
+      <article class="card plan">
+        <h3>Дизайнерский</h3>
+        <p class="price">от 18 500 ₽/м²</p>
+        <ul><li>Работа по дизайн-проекту</li><li>Авторский надзор</li><li>Срок от 12 недель</li></ul>
+        <a class="btn ghost" href="#lead-form">Узнать стоимость</a>
+      </article>
+    </div>
+  </section>
+
+  <section class="band" id="reviews">
+    <div class="wrap">
+      <h2>Что говорят клиенты</h2>
+      <div class="cards three">
+        <blockquote class="card"><p>Смета совпала с итоговой суммой до рубля. Каждый этап принимали по фото, на объект ездить почти не пришлось.</p><footer>Анна, 2-комнатная квартира</footer></blockquote>
+        <blockquote class="card"><p>Нашли проблему с проводкой ещё на замерах, а не посреди ремонта. Закрыли вопрос в рамках сметы.</p><footer>Игорь, новостройка</footer></blockquote>
+        <blockquote class="card"><p>Сдали на неделю раньше договора. Есть мелкие замечания, исправили за два дня по гарантии.</p><footer>Мария, студия</footer></blockquote>
+      </div>
+      <p class="muted small-note">Демо-страница: компания, цифры и отзывы вымышленные.</p>
+    </div>
+  </section>
+
+  <section class="wrap section" id="faq">
+    <h2>Частые вопросы</h2>
+    <details><summary>Сколько стоит выезд на замеры?</summary><p>Бесплатно, если вы заказываете смету. Выезд ни к чему не обязывает.</p></details>
+    <details><summary>Можно ли закупать материалы самому?</summary><p>Да. Мы подскажем, что и в каком объёме брать, чтобы не переплатить и не остаться без запаса.</p></details>
+    <details><summary>Что будет, если вы нарушите срок?</summary><p>В договоре прописана неустойка за каждый день просрочки. Мы указываем реалистичные сроки, а не те, которые приятно слышать.</p></details>
+    <details><summary>Как проходит оплата?</summary><p>Поэтапно: небольшой аванс на материалы, затем платежи после приёмки каждого этапа.</p></details>
+  </section>
+
+  <section class="cta" id="lead-form">
+    <div class="wrap cta-grid">
+      <div>
+        <h2>Рассчитаем смету бесплатно</h2>
+        <p>Оставьте телефон: перезвоним в рабочее время в течение 15 минут, уточним задачу и договоримся о замерах.</p>
+      </div>
+
+      <form method="post" action="{% url 'submit' %}" class="card form" id="lead" novalidate>
+        {% csrf_token %}
+        {% if form.non_field_errors %}
+          <div class="form-error" role="alert">{{ form.non_field_errors.0 }}</div>
+        {% endif %}
+        <div class="field">
+          <label for="{{ form.name.id_for_label }}">{{ form.name.label }}</label>
+          {{ form.name }}
+          {% for error in form.name.errors %}<p class="error" data-error-for="name">{{ error }}</p>{% endfor %}
+        </div>
+        <div class="field">
+          <label for="{{ form.phone.id_for_label }}">{{ form.phone.label }}</label>
+          {{ form.phone }}
+          {% for error in form.phone.errors %}<p class="error" data-error-for="phone">{{ error }}</p>{% endfor %}
+        </div>
+        <div class="field">
+          <label for="{{ form.message.id_for_label }}">{{ form.message.label }}</label>
+          {{ form.message }}
+          {% for error in form.message.errors %}<p class="error" data-error-for="message">{{ error }}</p>{% endfor %}
+        </div>
+        <div class="field check">
+          <label>{{ form.consent }} <span>{{ form.consent.label }}</span></label>
+          {% for error in form.consent.errors %}<p class="error" data-error-for="consent">{{ error }}</p>{% endfor %}
+        </div>
+        <div class="trap" aria-hidden="true">
+          <label for="{{ form.website.id_for_label }}">Не заполняйте это поле</label>
+          {{ form.website }}
+        </div>
+        {{ form.utm_source }}{{ form.utm_medium }}{{ form.utm_campaign }}
+        <button class="btn" type="submit">Получить расчёт</button>
+        <p class="status" id="form-status" role="status" aria-live="polite"></p>
+      </form>
+    </div>
+  </section>
+</main>
+
+<footer class="foot wrap">
+  Демо-страница для портфолио. Компания, цены и отзывы вымышленные.
+</footer>
+
+<script src="{% static 'leads/landing.js' %}" defer></script>
+</body>
+</html>
