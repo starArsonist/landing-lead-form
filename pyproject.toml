@@ -1,0 +1,31 @@
+[project]
+name = "landing-lead-form"
+version = "0.1.0"
+description = "Продающий лендинг на Django с формой заявки: валидация телефона, защита от спама, уведомление в Telegram."
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "django>=5.2,<5.3",
+]
+
+[dependency-groups]
+dev = [
+    "pytest>=8.3",
+    "pytest-django>=4.9",
+    "ruff>=0.8",
+]
+
+[tool.uv]
+package = false
+
+[tool.pytest.ini_options]
+DJANGO_SETTINGS_MODULE = "config.settings"
+testpaths = ["tests"]
+
+[tool.ruff]
+line-length = 100
+target-version = "py311"
+extend-exclude = ["leads/migrations"]
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "B", "UP"]
